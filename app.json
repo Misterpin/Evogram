@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Evogram_",
+    "slug": "Evogram_",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "sdkVersion": "38.0.0",
+    "android": {
+      "package": "com.ivan_mir.evogram",
+      "versionCode": 1
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "qwertyuiop"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
