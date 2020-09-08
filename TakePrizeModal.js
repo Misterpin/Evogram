@@ -1,16 +1,16 @@
-import React from 'react'
+﻿import React from 'react'
 import {View, Text, Modal, StyleSheet, TextInput, Image} from 'react-native'
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler'
 
 function TakePrizeModal({visible, onCancel}) {
     return (
         <Modal visible={visible} animationType='slide' transparent={true}>
-            <View style={styles.container}>
+            <View style={styles.container} onPress={() => onCancel()}>
                 <View style={styles.background}>
                     <View style={styles.space}>
-                        <Text style={styles.name}>Инструкция по получению приза</Text>
-                        <TouchableHighlight>
-                            <Text style={styles.iconExit} onPress={ () => onCancel()}><Image style={styles.exit} source={require('./public/exit.png')}></Image></Text>
+                        <Text style={styles.name}>Инструкция о получению приза</Text>
+                        <TouchableHighlight onPress={ () => Alert.alert("Закрытие окна") }>
+                            <Text style={styles.iconExit} onPress={ () => Alert.alert("Закрытие окна") }><Image style={styles.exit} source={require('./public/exit.png')}></Image></Text>
                         </TouchableHighlight>
                     </View>
                     <View>
